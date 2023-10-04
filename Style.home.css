@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:ital,wght@0,400;1,600 & display=swap');
+/*site para dirar duvidas (developer mozila)*/
+* { /*  (*) seletor universal, usado para formatar todos os elementos de uma pagina com a mesma estilização.*/
+
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --cor_primaria: #000000;
+    --cor_secundaria:#F6F6F6;
+    --cor_tercearia:#22d4fd;
+
+    --Font_principal:'Krona One', sans-serif;
+    --Font_secundaria:'Montserrat', sans-serif;
+
+}
+
+body {
+
+    box-sizing: border-box;
+    background-color:var(--cor_primaria);
+    color: #F6F6F6;
+    
+
+}
+
+.Cabeçalho{
+    padding: 3% 0% 3% 15%;
+    background-color: var(--cor_tercearia);
+}
+
+.Cabeçalho_menu{
+    display: flex;
+    gap: 100px;
+}
+
+.Cabeçalho_icones {
+
+    font-family: var(--Font_secundaria);
+    width: 600;
+    font-size: 36px;
+    color:var(--cor_primaria);
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+.Cabeçalho_icones:hover{
+    color: var(--cor_secundaria);
+}
+
+
+
+.titulo-destaque {
+
+    color: var(--cor_tercearia);
+
+}
+
+.apresentacao {
+
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.links_subtitulo{
+
+    font-family:var(--Font_principal);
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--cor_secundaria);
+    
+}
+.conteudo {
+
+    width: 600px ;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.conteudo_titulo {
+
+    font-size: 40px;
+    font-family: var(--Font_principal);
+}
+
+.conteudo_texto {
+
+    font-size: 24px;
+    font-family: var(--Font_secundaria);
+    
+
+}
+.botoes{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.conteudo_links{
+
+    /* background-color: #000000; */
+    
+    display: flex;/*<------------------------------------------(display: flex;) utilizado para deixar os elementos alinhados*/
+    justify-content: center;/*<--------------------------------(justify-content:center;) usado para centralizar os elementos*/
+    font-family:var(--Font_principal); /*font retirada do google*/
+    border: 2px solid var(--cor_tercearia); /*<---------------------------(border: 2px solid xxxxx) é usado para estilizar a borda de um lemento, cor, espesura e estilo */
+    width: 500px;/*<-------------------------------------------(A width define a largura de um elemento. Por padrão, ele define a largura da área de conteúdo)*/
+    text-align: center;/*<-------------------------------------(A propriedade CSS define o alinhamento horizontal do conteúdo de nível embutido dentro de um elemento de bloco ou caixa de célula de tabela.)*/
+    border-radius: 8px;/*<-------------------------------------(arredonda os cantos da borda externa de um elemento)*/
+    font-size: 24px;/*<----------------------------------------(usado para determinar o temanho da fonte)*/
+    padding: 21.5px 0 ;/*<-------------------------------------(define a distancia dos todos os quatro lados de um elemento de uma só vez.(padding))*/
+    text-decoration: none;/*<----------------------------------(Usado para decorar o sublinhado da fonte)*/
+    font-weight: 1000; /*<--------------------------------------(usado para determinar o peso da fonte (negrito))*/
+    color:var(--cor_secundaria);/*<----------------------------------------(usado para estilizar as cores de uma fonte)*/
+    gap: 16px;/*<---------------------------------------------(usado para determinar um espaçamento entre elemnteos)*/
+
+}
+
+.conteudo_links:hover /*<--------houver utilizado para criar animações dos botoes*/{
+
+    background-color: #272727;
+    width: 600px;
+    
+}
+.rodapé {
+    
+    color: var(--cor_primaria);
+    background-color: var(--cor_tercearia);
+    font-family:var(--Font_secundaria);
+    padding: 24px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400px;
+    
+}
+
+/*Treino */
+
+.Conteudo_geral{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--cor_secundaria);
+    gap: 39px;
+    font-family: var(--Font_secundaria);
+    padding: 5% 15% 2% 5%;
+
+    font-size: 30px;
+    
+}
+
+.titulo_geral{
+
+    font-size: 40px;
+    color:var(--cor_tercearia);
+}
